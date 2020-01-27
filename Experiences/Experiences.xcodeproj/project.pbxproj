@@ -14,6 +14,7 @@
 		F36FF1D323DF48CD0086BBF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36FF1D223DF48CD0086BBF1 /* Assets.xcassets */; };
 		F36FF1D623DF48CD0086BBF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36FF1D423DF48CD0086BBF1 /* LaunchScreen.storyboard */; };
 		F36FF1E223DF6B2D0086BBF1 /* ExperienceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1E123DF6B2D0086BBF1 /* ExperienceMapViewController.swift */; };
+		F36FF1E423DF6C030086BBF1 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1E323DF6C030086BBF1 /* Experience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F36FF1D523DF48CD0086BBF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F36FF1D723DF48CD0086BBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F36FF1E123DF6B2D0086BBF1 /* ExperienceMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceMapViewController.swift; sourceTree = "<group>"; };
+		F36FF1E323DF6C030086BBF1 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		F36FF1DE23DF5A6F0086BBF1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F36FF1E323DF6C030086BBF1 /* Experience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				F36FF1CE23DF48CA0086BBF1 /* ViewController.swift in Sources */,
 				F36FF1CA23DF48CA0086BBF1 /* AppDelegate.swift in Sources */,
 				F36FF1CC23DF48CA0086BBF1 /* SceneDelegate.swift in Sources */,
+				F36FF1E423DF6C030086BBF1 /* Experience.swift in Sources */,
 				F36FF1E223DF6B2D0086BBF1 /* ExperienceMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
