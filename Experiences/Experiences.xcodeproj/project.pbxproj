@@ -16,6 +16,7 @@
 		F36FF1E223DF6B2D0086BBF1 /* ExperienceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1E123DF6B2D0086BBF1 /* ExperienceMapViewController.swift */; };
 		F36FF1E423DF6C030086BBF1 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1E323DF6C030086BBF1 /* Experience.swift */; };
 		F36FF1E923DF6CF60086BBF1 /* Experience Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1E823DF6CF60086BBF1 /* Experience Controller.swift */; };
+		F36FF1ED23DF7FB30086BBF1 /* ImageAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1EC23DF7FB30086BBF1 /* ImageAudioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F36FF1E123DF6B2D0086BBF1 /* ExperienceMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceMapViewController.swift; sourceTree = "<group>"; };
 		F36FF1E323DF6C030086BBF1 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		F36FF1E823DF6CF60086BBF1 /* Experience Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Experience Controller.swift"; sourceTree = "<group>"; };
+		F36FF1EC23DF7FB30086BBF1 /* ImageAudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAudioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				F36FF1CD23DF48CA0086BBF1 /* ViewController.swift */,
 				F36FF1E123DF6B2D0086BBF1 /* ExperienceMapViewController.swift */,
+				F36FF1EC23DF7FB30086BBF1 /* ImageAudioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36FF1ED23DF7FB30086BBF1 /* ImageAudioViewController.swift in Sources */,
 				F36FF1E923DF6CF60086BBF1 /* Experience Controller.swift in Sources */,
 				F36FF1CE23DF48CA0086BBF1 /* ViewController.swift in Sources */,
 				F36FF1CA23DF48CA0086BBF1 /* AppDelegate.swift in Sources */,
