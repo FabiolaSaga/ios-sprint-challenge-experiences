@@ -67,11 +67,13 @@
                                 <rect key="frame" x="20" y="203" width="374" height="382"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPW-7I-e0J">
-                                <rect key="frame" x="325" y="523" width="69" height="62"/>
+                                <rect key="frame" x="131" y="454" width="151" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="camera.fill" catalog="system"/>
+                                <state key="normal" title="Upload Image">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -87,7 +89,7 @@
                         <viewLayoutGuide key="safeArea" id="dms-FT-89p"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Experience" id="aXo-ye-LdF">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="IvE-cJ-8Ka"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="IvE-cJ-8Ka"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kB0-Wl-uPY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -115,7 +117,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera.fill" catalog="system" width="64" height="48"/>
         <image name="placeholder" width="1280" height="960"/>
     </resources>
 </document>
