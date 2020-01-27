@@ -104,7 +104,9 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="IvE-cJ-8Ka"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="audioRecorderButton" destination="0to-2V-QRe" id="w33-77-15f"/>
                         <outlet property="experienceTitleTextField" destination="8vh-xW-wo1" id="XCj-8n-g0P"/>
+                        <outlet property="imageUploadButton" destination="dPW-7I-e0J" id="nNu-PQ-dEW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kB0-Wl-uPY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
