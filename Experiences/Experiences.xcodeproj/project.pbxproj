@@ -56,15 +56,47 @@
 		F36FF1C823DF48CA0086BBF1 /* Experiences */ = {
 			isa = PBXGroup;
 			children = (
+				F36FF1E023DF5A860086BBF1 /* Views */,
+				F36FF1DF23DF5A780086BBF1 /* ViewControllers */,
+				F36FF1DE23DF5A6F0086BBF1 /* Models */,
+				F36FF1DD23DF494F0086BBF1 /* Storyboards */,
 				F36FF1C923DF48CA0086BBF1 /* AppDelegate.swift */,
 				F36FF1CB23DF48CA0086BBF1 /* SceneDelegate.swift */,
-				F36FF1CD23DF48CA0086BBF1 /* ViewController.swift */,
-				F36FF1CF23DF48CA0086BBF1 /* Main.storyboard */,
 				F36FF1D223DF48CD0086BBF1 /* Assets.xcassets */,
-				F36FF1D423DF48CD0086BBF1 /* LaunchScreen.storyboard */,
 				F36FF1D723DF48CD0086BBF1 /* Info.plist */,
 			);
 			path = Experiences;
+			sourceTree = "<group>";
+		};
+		F36FF1DD23DF494F0086BBF1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F36FF1D423DF48CD0086BBF1 /* LaunchScreen.storyboard */,
+				F36FF1CF23DF48CA0086BBF1 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F36FF1DE23DF5A6F0086BBF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F36FF1DF23DF5A780086BBF1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F36FF1CD23DF48CA0086BBF1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F36FF1E023DF5A860086BBF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
