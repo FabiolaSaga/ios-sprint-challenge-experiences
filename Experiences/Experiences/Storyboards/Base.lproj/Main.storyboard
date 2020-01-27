@@ -74,12 +74,18 @@
                                 <state key="normal" title="Upload Image">
                                     <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadImageButtonTapped:" destination="1MO-8W-2yx" eventType="touchUpInside" id="ogB-zR-KbT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0to-2V-QRe">
                                 <rect key="frame" x="168" y="606" width="78" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="google-voice"/>
                                 <state key="selected" image="microphone"/>
+                                <connections>
+                                    <action selector="audioRecorderButtonTapped:" destination="1MO-8W-2yx" eventType="touchUpInside" id="ccA-Kg-rZT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -98,10 +104,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="IvE-cJ-8Ka"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="audioRecorderButton" destination="0to-2V-QRe" id="WNG-cv-Ly9"/>
                         <outlet property="experienceTitleTextField" destination="8vh-xW-wo1" id="XCj-8n-g0P"/>
-                        <outlet property="imageUploadButton" destination="dPW-7I-e0J" id="kLO-NP-rkO"/>
-                        <outlet property="imageView" destination="Bpm-dt-AaM" id="COZ-BD-TE1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kB0-Wl-uPY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

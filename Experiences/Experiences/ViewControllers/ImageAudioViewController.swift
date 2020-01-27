@@ -30,14 +30,18 @@ class ImageAudioViewController: UIViewController {
     var isRecording: Bool {
         return audioRecorder?.isRecording ?? false
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    //MARK: Actions
+    
+   
+    @IBAction func uploadImageButtonTapped(_ sender: UIButton) {
+        
     }
     
-
+    
+    @IBAction func audioRecorderButtonTapped(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -48,4 +52,19 @@ class ImageAudioViewController: UIViewController {
     }
     */
 
+}
+
+extension ImageAudioViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let img = info[.originalImage] as? UIImage {
+            self.originalImage = img
+        }
+        
+        self.imageUploadButton.isHidden = true
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
 }
