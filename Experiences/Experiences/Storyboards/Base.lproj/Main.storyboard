@@ -53,7 +53,7 @@
         <!--Add Experience-->
         <scene sceneID="0RV-iI-Wwm">
             <objects>
-                <viewController id="1MO-8W-2yx" sceneMemberID="viewController">
+                <viewController id="1MO-8W-2yx" customClass="ImageAudioViewController" customModule="Experiences" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EBL-Lx-nVM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,6 +97,12 @@
                     <navigationItem key="navigationItem" title="Add Experience" id="aXo-ye-LdF">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="IvE-cJ-8Ka"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="audioRecorderButton" destination="0to-2V-QRe" id="WNG-cv-Ly9"/>
+                        <outlet property="experienceTitleTextField" destination="8vh-xW-wo1" id="XCj-8n-g0P"/>
+                        <outlet property="imageUploadButton" destination="dPW-7I-e0J" id="kLO-NP-rkO"/>
+                        <outlet property="imageView" destination="Bpm-dt-AaM" id="COZ-BD-TE1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kB0-Wl-uPY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

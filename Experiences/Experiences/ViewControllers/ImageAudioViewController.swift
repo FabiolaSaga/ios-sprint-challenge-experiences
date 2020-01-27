@@ -11,6 +11,11 @@ import AVFoundation
 
 class ImageAudioViewController: UIViewController {
     
+    //MARK: Outlets
+    @IBOutlet weak var experienceTitleTextField: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageUploadButton: UIButton!
+    @IBOutlet weak var audioRecorderButton: UIButton!
     
     //MARK: Properties
     var experienceController: ExperienceController?
