@@ -26,6 +26,9 @@
                                     <constraint firstAttribute="width" constant="139" id="U33-8S-vdS"/>
                                 </constraints>
                                 <state key="normal" title="Add Experience"/>
+                                <connections>
+                                    <segue destination="a3t-Dh-ts3" kind="presentation" identifier="AddNewExperience" modalPresentationStyle="fullScreen" id="Z5X-Q7-8MR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -47,5 +50,72 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
+        <!--Add Experience-->
+        <scene sceneID="0RV-iI-Wwm">
+            <objects>
+                <viewController id="1MO-8W-2yx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EBL-Lx-nVM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-xW-wo1">
+                                <rect key="frame" x="20" y="161" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-dt-AaM">
+                                <rect key="frame" x="20" y="203" width="374" height="382"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPW-7I-e0J">
+                                <rect key="frame" x="325" y="523" width="69" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="camera.fill" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8vh-xW-wo1" firstAttribute="trailing" secondItem="EBL-Lx-nVM" secondAttribute="trailingMargin" id="EuL-ou-8Yd"/>
+                            <constraint firstItem="8vh-xW-wo1" firstAttribute="leading" secondItem="EBL-Lx-nVM" secondAttribute="leadingMargin" id="HJT-4l-0OL"/>
+                            <constraint firstItem="dms-FT-89p" firstAttribute="bottom" secondItem="Bpm-dt-AaM" secondAttribute="bottom" constant="277" id="Kog-sZ-HQC"/>
+                            <constraint firstItem="8vh-xW-wo1" firstAttribute="top" secondItem="dms-FT-89p" secondAttribute="top" constant="21" id="Nsc-Fy-PDo"/>
+                            <constraint firstItem="Bpm-dt-AaM" firstAttribute="top" secondItem="8vh-xW-wo1" secondAttribute="bottom" constant="8" symbolic="YES" id="Xr8-0i-m26"/>
+                            <constraint firstItem="8vh-xW-wo1" firstAttribute="trailing" secondItem="Bpm-dt-AaM" secondAttribute="trailing" id="waz-TC-ePK"/>
+                            <constraint firstItem="8vh-xW-wo1" firstAttribute="leading" secondItem="Bpm-dt-AaM" secondAttribute="leading" id="zF2-Ci-Svq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dms-FT-89p"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Experience" id="aXo-ye-LdF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="IvE-cJ-8Ka"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kB0-Wl-uPY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897.1014492753625" y="130.58035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OEF-19-gF3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a3t-Dh-ts3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="xhK-16-EjD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GPg-K8-pp5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1MO-8W-2yx" kind="relationship" relationship="rootViewController" id="2lE-dQ-cuH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3M-6r-KBT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="130.58035714285714"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="camera.fill" catalog="system" width="64" height="48"/>
+        <image name="placeholder" width="1280" height="960"/>
+    </resources>
 </document>
