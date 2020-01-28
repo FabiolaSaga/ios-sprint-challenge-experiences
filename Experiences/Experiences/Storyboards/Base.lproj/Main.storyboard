@@ -58,17 +58,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-xW-wo1">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-xW-wo1">
                                 <rect key="frame" x="20" y="161" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="wmE-Qj-MUF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-dt-AaM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Bpm-dt-AaM">
                                 <rect key="frame" x="20" y="203" width="374" height="382"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPW-7I-e0J">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPW-7I-e0J">
                                 <rect key="frame" x="131" y="454" width="151" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="noX-dV-Q6a"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Upload Image">
@@ -78,10 +83,15 @@
                                     <action selector="uploadImageButtonTapped:" destination="1MO-8W-2yx" eventType="touchUpInside" id="ogB-zR-KbT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0to-2V-QRe">
-                                <rect key="frame" x="168" y="606" width="78" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="google-voice"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0to-2V-QRe">
+                                <rect key="frame" x="88.5" y="593" width="237" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="OI2-AQ-mTW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <state key="selected" image="microphone"/>
                                 <connections>
                                     <action selector="audioRecorderButtonTapped:" destination="1MO-8W-2yx" eventType="touchUpInside" id="ccA-Kg-rZT"/>
@@ -90,11 +100,17 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="0to-2V-QRe" firstAttribute="top" secondItem="Bpm-dt-AaM" secondAttribute="bottom" constant="8" symbolic="YES" id="8of-Y0-AEr"/>
+                            <constraint firstItem="dPW-7I-e0J" firstAttribute="leading" secondItem="dms-FT-89p" secondAttribute="leading" constant="131" id="8sy-ji-sbT"/>
+                            <constraint firstItem="0to-2V-QRe" firstAttribute="centerX" secondItem="Bpm-dt-AaM" secondAttribute="centerX" id="Cu6-6H-lAN"/>
                             <constraint firstItem="8vh-xW-wo1" firstAttribute="trailing" secondItem="EBL-Lx-nVM" secondAttribute="trailingMargin" id="EuL-ou-8Yd"/>
                             <constraint firstItem="8vh-xW-wo1" firstAttribute="leading" secondItem="EBL-Lx-nVM" secondAttribute="leadingMargin" id="HJT-4l-0OL"/>
                             <constraint firstItem="dms-FT-89p" firstAttribute="bottom" secondItem="Bpm-dt-AaM" secondAttribute="bottom" constant="277" id="Kog-sZ-HQC"/>
                             <constraint firstItem="8vh-xW-wo1" firstAttribute="top" secondItem="dms-FT-89p" secondAttribute="top" constant="21" id="Nsc-Fy-PDo"/>
                             <constraint firstItem="Bpm-dt-AaM" firstAttribute="top" secondItem="8vh-xW-wo1" secondAttribute="bottom" constant="8" symbolic="YES" id="Xr8-0i-m26"/>
+                            <constraint firstItem="8vh-xW-wo1" firstAttribute="centerX" secondItem="dPW-7I-e0J" secondAttribute="centerX" id="aoe-FY-WQ9"/>
+                            <constraint firstItem="dms-FT-89p" firstAttribute="bottom" secondItem="0to-2V-QRe" secondAttribute="bottom" constant="191" id="f6V-w2-qQX"/>
+                            <constraint firstAttribute="bottom" secondItem="dPW-7I-e0J" secondAttribute="bottom" constant="397" id="sVv-hN-Xhj"/>
                             <constraint firstItem="8vh-xW-wo1" firstAttribute="trailing" secondItem="Bpm-dt-AaM" secondAttribute="trailing" id="waz-TC-ePK"/>
                             <constraint firstItem="8vh-xW-wo1" firstAttribute="leading" secondItem="Bpm-dt-AaM" secondAttribute="leading" id="zF2-Ci-Svq"/>
                         </constraints>
@@ -134,7 +150,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="google-voice" width="512" height="512"/>
         <image name="microphone" width="512" height="512"/>
         <image name="placeholder" width="1280" height="960"/>
     </resources>
